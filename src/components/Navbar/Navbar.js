@@ -13,7 +13,7 @@ import {
 } from "./NavbarElements";
 
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
 
         return (
             <>
@@ -22,7 +22,7 @@ const Navbar = () => {
                         <NavLogo to="/">
                                     genia
                         </NavLogo>
-                        <MobileIcon>
+                        <MobileIcon onClick={toggle} >
                               <FaBars />
                         </MobileIcon>
                         <NavMenu>
@@ -30,10 +30,10 @@ const Navbar = () => {
                                 <NavLinks to='about'>About</NavLinks>
                              </NavItem>
                              <NavItem>
-                                <NavLinks to='projects'>Projects</NavLinks>
+                                <NavLinks to='skills'>Skills</NavLinks>
                              </NavItem>
                              <NavItem>
-                                <NavLinks to='contact'>Contact</NavLinks>
+                                <NavLinks to='projects'>Projects</NavLinks>
                              </NavItem>
                              <NavItem>
                                 <NavLinks to='signup'>Sign up</NavLinks>
