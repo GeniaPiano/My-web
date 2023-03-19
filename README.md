@@ -1,7 +1,7 @@
 ### This project is still in progress.
 
-I am working on building my portfolio in React.
+It is a static page which I am building to get more practical skills in work with React.
 
-The portfolio will consist all information about me as a developer and artist in one.
+
 Check it back soon ⏰ 
 

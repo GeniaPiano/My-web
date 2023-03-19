@@ -3,12 +3,12 @@ export const homeObjOne = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Topline',
+    topLine: 'About',
     headline: 'Lorem ipsum dolor sit amet. ',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis at consectetur lorem donec massa. Eu tincidunt tortor aliquam nulla. A cras semper auctor neque vitae tempus quam.',
     buttonLabel: 'Get started',
     imgStart: true,
-    img: require('../../images/svg-2.svg'),
+    img: require('../../images/svg-1.svg'),
     alt: 'image',
     dark: true,
     primary: true,
@@ -16,11 +16,11 @@ export const homeObjOne = {
 }
 
 export const homeObjTwo = {
-    id: 'about',
+    id: 'offer',
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'Topline',
+    topLine: 'Offer',
     headline: 'Lorem ipsum dolor sit amet. ',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis at consectetur lorem donec massa. Eu tincidunt tortor aliquam nulla. A cras semper auctor neque vitae tempus quam.',
     buttonLabel: 'Get started',
@@ -33,11 +33,11 @@ export const homeObjTwo = {
 }
 
 export const homeObjThree = {
-    id: 'about',
+    id: 'signup',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Topline',
+    topLine: 'Join us',
     headline: 'Lorem ipsum dolor sit amet. ',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis at consectetur lorem donec massa. Eu tincidunt tortor aliquam nulla. A cras semper auctor neque vitae tempus quam.',
     buttonLabel: 'Get started',

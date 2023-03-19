@@ -1,11 +1,17 @@
 import React from 'react';
-// import {ReactComponent as Img1} from "../../images/svg-1.svg";
+import Img1 from "../../images/svg-1.svg";
+import Img2 from "../../images/svg-2.svg";
+import Img3 from "../../images/svg-3.svg";
 import {
     InfoContainer, InfoWrapper, InfoRow,
     Column1, Column2, TopLine, TextWrapper,
     Heading, Subtitle, BtnWrapper, ImgWrapper, Img
 } from "./InfoSectionElements";
 import {Button} from "../ButtonElement/ButtonElement";
+
+
+
+
 
 
 const InfoSection = ({lightBg,
@@ -41,14 +47,14 @@ const InfoSection = ({lightBg,
                                   primary={primary ? 1 : 0 }
                                   dark={dark ? 1 : 0}
                                   dark2={dark2 ? 1 : 0}
-
                                   > {buttonLabel}</Button>
                               </BtnWrapper>
                           </TextWrapper>
                         </Column1>
                         <Column2>
                           <ImgWrapper>
-                            <Img src={img} alt={alt}  />
+                              <Img src={img}/>
+
                           </ImgWrapper>
                         </Column2>
                   </InfoRow>

@@ -20,7 +20,7 @@ const Navbar = ({ toggle }) => {
                 <Nav>
                     <NavbarContainer>
                         <NavLogo to="/">
-                                    genia
+                                    Travel
                         </NavLogo>
                         <MobileIcon onClick={toggle} >
                               <FaBars />
@@ -30,10 +30,10 @@ const Navbar = ({ toggle }) => {
                                 <NavLinks to='about'>About</NavLinks>
                              </NavItem>
                              <NavItem>
-                                <NavLinks to='skills'>Skills</NavLinks>
+                                <NavLinks to='offer'>Offer</NavLinks>
                              </NavItem>
                              <NavItem>
-                                <NavLinks to='projects'>Projects</NavLinks>
+                                <NavLinks to='services'>Services</NavLinks>
                              </NavItem>
                              <NavItem>
                                 <NavLinks to='signup'>Sign up</NavLinks>
