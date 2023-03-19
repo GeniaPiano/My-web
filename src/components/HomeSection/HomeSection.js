@@ -36,7 +36,9 @@ const HomeSection = () => {
                                 primary="true"
                                 dark='true'
                                 >
-                            Get started {hover ? <ArrowForward /> : <ArrowRight />}
+                            Get started
+                            {/*{hover ? <ArrowForward /> : <ArrowRight />}*/}
+
                         </Button>
                     </HomeBtnWrapper>
                 </HomeContent>

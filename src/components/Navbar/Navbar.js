@@ -11,15 +11,20 @@ import {
     NavBtn,
     NavBtnLink,
 } from "./NavbarElements";
+import {animateScroll as scroll} from "react-scroll";
 
 
 const Navbar = ({ toggle }) => {
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    }
 
         return (
             <>
                 <Nav>
                     <NavbarContainer>
-                        <NavLogo to="/">
+                        <NavLogo to="/" onClick={toggleHome}>
                                     Travel
                         </NavLogo>
                         <MobileIcon onClick={toggle} >
@@ -27,16 +32,44 @@ const Navbar = ({ toggle }) => {
                         </MobileIcon>
                         <NavMenu>
                              <NavItem>
-                                <NavLinks to='about'>About</NavLinks>
+                                <NavLinks to='about'
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact='true'
+                                offset={-80}>
+                                    About
+                                </NavLinks>
                              </NavItem>
                              <NavItem>
-                                <NavLinks to='offer'>Offer</NavLinks>
+                                <NavLinks to='offer'
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact='true'
+                                offset={-80}>
+                                    Offer
+                                </NavLinks>
                              </NavItem>
                              <NavItem>
-                                <NavLinks to='services'>Services</NavLinks>
+                                <NavLinks to='services'
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact='true'
+                                offset={-80}>
+                                    Services
+                                </NavLinks>
                              </NavItem>
                              <NavItem>
-                                <NavLinks to='signup'>Sign up</NavLinks>
+                                <NavLinks to='signup'
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact='true'
+                                offset={-80}>
+                                    Sign up
+                                </NavLinks>
                              </NavItem>
                         </NavMenu>
                         <NavBtn>
