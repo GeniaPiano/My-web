@@ -81,7 +81,7 @@ export const ProjectH2 = styled.h2`
   color: #010606;
 `;
 
-export const ProjectP =styled.p`
+export const ProjectP = styled.p`
   font-size: 14px;
   text-align: center;
   color: #010606;

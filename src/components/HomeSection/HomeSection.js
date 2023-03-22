@@ -1,39 +1,43 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {
     HomeBackground,
     HomeBtnWrapper,
     HomeContainer,
     HomeContent,
-    HomeH1,
+    HomeHeading,
     HomePara,
-    HomeButton, HomeSpan1, HomeSpan2
+    HomeButton, HomeH1, HomeP, HomeText, HomeImg, HomeImgWrapper
 } from "./HomeSectionElements";
+
+import Img from '../../images/avatar.svg';
 
 
 
 const HomeSection = () => {
-    // const [hover, setHover] = useState(false);
-    //
-    // const onHover = () => {
-    //     setHover(!hover)
-    // }
-
-    return (
+     return (
         <HomeContainer>
             <HomeBackground>
                 <HomeContent>
-                    <HomeH1>
-                      Hi, I am Eugenia
-                    </HomeH1>
-                    <HomePara>
-                         <HomeSpan1> web developer,</HomeSpan1>
-                        <HomeSpan2>photographer and pianist</HomeSpan2>
-                    </HomePara>
-                    <HomeBtnWrapper>
-                        <HomeButton to='/contact'>
-                            About me...
-                        </HomeButton>
-                    </HomeBtnWrapper>
+
+                    <HomeText>
+                        <HomeP>
+                            Hi, I am Eugenia
+                        </HomeP>
+                        <HomeH1> web developer </HomeH1>
+
+
+                        <HomeP>photographer & pianist</HomeP>
+                        <HomeBtnWrapper>
+                            <HomeButton to='about'>
+                                Learn more
+                            </HomeButton>
+                        </HomeBtnWrapper>
+                    </HomeText>
+
+                    <HomeImgWrapper>
+                        <HomeImg src={Img}></HomeImg>
+                    </HomeImgWrapper>
+
                 </HomeContent>
             </HomeBackground>
         </HomeContainer>

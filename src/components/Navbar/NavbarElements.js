@@ -40,12 +40,23 @@ export const NavLogo = styled(LinkR)`
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
-  
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    color: #b697fa;
+  }
+
+
 `;
 
 export const MobileIcon = styled.div`
   display: none;
-  
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    color: #b697fa;
+  }
+
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
@@ -55,7 +66,8 @@ export const MobileIcon = styled.div`
     font-size: 1.8rem;
     cursor: pointer;
     color: #fff;
-      }
+
+  }
 `;
 
 export const NavMenu = styled.ul`
@@ -94,14 +106,14 @@ export const NavLinks = styled(LinkScroll)`
   }
 `;
 
-export const NavBtn = styled.nav`
-  display: flex;
-  align-items: center;
-  
-  @media screen and(max-width: 768px) {
-    display: none;
-  }
-`;
+// export const NavBtn = styled.nav`
+//   display: flex;
+//   align-items: center;
+//
+//   @media screen and(max-width: 768px) {
+//     display: none;
+//   }
+// `;
 
 export const NavBtnLink = styled(LinkR)`
   //border-radius: 50px;

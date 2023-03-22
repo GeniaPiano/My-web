@@ -1,11 +1,9 @@
 import React from 'react';
-import Img1 from "../../images/svg-1.svg";
-import Img2 from "../../images/svg-2.svg";
-import Img3 from "../../images/svg-3.svg";
+
 import {
     InfoContainer, InfoWrapper, InfoRow,
     Column1, Column2, TopLine, TextWrapper,
-    Heading, Subtitle, BtnWrapper, ImgWrapper, Img, Button
+    Heading, Subtitle, BtnWrapper, ImgWrapper, Button
 } from "./InfoSectionElements";
 
 
@@ -23,8 +21,7 @@ const InfoSection = ({lightBg,
                          darkText,
                          buttonLabel,
                          description,
-                         img,
-                         alt, primary, dark, dark2
+                        primary, dark, dark2
 
                      }) => {
     return (
@@ -53,7 +50,7 @@ const InfoSection = ({lightBg,
                         </Column1>
                         <Column2>
                           <ImgWrapper>
-                              <Img src={img}/>
+                              {/*<Img src={img}/>*/}
 
                           </ImgWrapper>
                         </Column2>

@@ -8,7 +8,6 @@ import {
     NavMenu,
     NavItem,
     NavLinks,
-    NavBtn,
     NavBtnLink,
 } from "./NavbarElements";
 import {animateScroll as scroll} from "react-scroll";
@@ -67,9 +66,6 @@ const Navbar = ({ toggle }) => {
                                 </NavBtnLink>
                              </NavItem>
                         </NavMenu>
-                        {/*<NavBtn>*/}
-                        {/* <NavBtnLink to='signin'> Contact </NavBtnLink>*/}
-                        {/*</NavBtn>*/}
                     </NavbarContainer>
                 </Nav>
             </>
