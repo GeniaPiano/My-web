@@ -59,10 +59,10 @@ export const FooterLink = styled(Link)`
   text-decoration: none;
   margin-bottom: 0.5rem;
   font-size: 14px;
-  
-  &:hover{
-    color: #01bf71;
-    transition: 0.3 ease-in-out;
+
+  &:hover {
+    color: #7b4eda;
+    transition: 0.2s ease-in-out;
   }
 `
 
@@ -106,8 +106,9 @@ export const WebsiteRightsSpan = styled.span`
 
 export const SocialIcons = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 10px;
   width: 240px;
 
 `;

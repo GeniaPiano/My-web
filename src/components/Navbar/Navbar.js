@@ -25,7 +25,7 @@ const Navbar = ({ toggle }) => {
                 <Nav>
                     <NavbarContainer>
                         <NavLogo to="/" onClick={toggleHome}>
-                                    Travel
+                                    Eugenia
                         </NavLogo>
                         <MobileIcon onClick={toggle} >
                               <FaBars />
@@ -42,39 +42,34 @@ const Navbar = ({ toggle }) => {
                                 </NavLinks>
                              </NavItem>
                              <NavItem>
-                                <NavLinks to='offer'
+                                <NavLinks to='skills'
                                 smooth={true}
                                 duration={500}
                                 spy={true}
                                 exact='true'
                                 offset={-80}>
-                                    Offer
+                                    Skills
                                 </NavLinks>
                              </NavItem>
                              <NavItem>
-                                <NavLinks to='services'
+                                <NavLinks to='projects'
                                 smooth={true}
                                 duration={500}
                                 spy={true}
                                 exact='true'
                                 offset={-80}>
-                                    Services
+                                    Projects
                                 </NavLinks>
                              </NavItem>
                              <NavItem>
-                                <NavLinks to='signup'
-                                smooth={true}
-                                duration={500}
-                                spy={true}
-                                exact='true'
-                                offset={-80}>
-                                    Sign up
-                                </NavLinks>
+                                <NavBtnLink to='contact'>
+                                    Contact
+                                </NavBtnLink>
                              </NavItem>
                         </NavMenu>
-                        <NavBtn>
-                         <NavBtnLink to='signin'>Sign in</NavBtnLink>
-                        </NavBtn>
+                        {/*<NavBtn>*/}
+                        {/* <NavBtnLink to='signin'> Contact </NavBtnLink>*/}
+                        {/*</NavBtn>*/}
                     </NavbarContainer>
                 </Nav>
             </>

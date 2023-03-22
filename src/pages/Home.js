@@ -3,8 +3,8 @@ import Navbar from "../components/Navbar/Navbar";
 import SideBar from "../components/Sidebar/SideBar";
 import HomeSection from "../components/HomeSection/HomeSection";
 import InfoSection from "../components/InfoSection/InfoSection";
-import {homeObjOne, homeObjTwo, homeObjThree} from "../components/InfoSection/Data";
-import Services from "../components/Services/Services";
+import {homeObjOne, homeObjTwo} from "../components/InfoSection/Data";
+import Projects from "../components/Projects/Projects";
 import Footer from "../components/Footer/Footer";
 
 
@@ -21,8 +21,9 @@ const Home = () => {
         <HomeSection />
         <InfoSection {...homeObjOne} />
         <InfoSection {...homeObjTwo} />
-        <Services />
-        <InfoSection {...homeObjThree} />
+
+        <Projects />
+
         <Footer />
         </>
     )

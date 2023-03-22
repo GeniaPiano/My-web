@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {Link as LinkRoute} from "react-router-dom";
 
 
 export const InfoContainer = styled.div`
@@ -52,7 +53,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-    color:#01bf71;
+    color:#9f61dc;
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
@@ -98,7 +99,25 @@ export const Img = styled.img`
   padding-right: 0;
   `;
 
+export const Button  = styled(LinkRoute)`
+  border-radius: 50px;
+  background: #9451d5;
+  white-space: nowrap;
+  padding: 16px 64px;
+  color: #010606;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
 
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #b183de;
+    color: #010606;
+  }
+`;
 
 
 

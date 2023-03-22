@@ -1,45 +1,38 @@
 import React, {useState} from 'react';
-import {Button} from "../ButtonElement/ButtonElement";
 import {
-    ArrowForward, ArrowRight,
     HomeBackground,
     HomeBtnWrapper,
     HomeContainer,
     HomeContent,
     HomeH1,
-    HomePara
+    HomePara,
+    HomeButton, HomeSpan1, HomeSpan2
 } from "./HomeSectionElements";
 
 
 
 const HomeSection = () => {
-    const [hover, setHover] = useState(false);
-
-    const onHover = () => {
-        setHover(!hover)
-    }
+    // const [hover, setHover] = useState(false);
+    //
+    // const onHover = () => {
+    //     setHover(!hover)
+    // }
 
     return (
         <HomeContainer>
             <HomeBackground>
                 <HomeContent>
                     <HomeH1>
-                       Welcome to Travel World.
+                      Hi, I am Eugenia
                     </HomeH1>
                     <HomePara>
-                        We can organise the best event for you.
+                         <HomeSpan1> web developer,</HomeSpan1>
+                        <HomeSpan2>photographer and pianist</HomeSpan2>
                     </HomePara>
                     <HomeBtnWrapper>
-                        <Button to='contact'
-                                onMouseEnter={onHover}
-                                onMouseLeave={onHover}
-                                primary="true"
-                                dark='true'
-                                >
-                            Get started
-                            {/*{hover ? <ArrowForward /> : <ArrowRight />}*/}
-
-                        </Button>
+                        <HomeButton to='/contact'>
+                            About me...
+                        </HomeButton>
                     </HomeBtnWrapper>
                 </HomeContent>
             </HomeBackground>

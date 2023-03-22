@@ -1,4 +1,5 @@
 import React from 'react';
+import {animateScroll as scroll} from "react-scroll";
 import {
     FooterContainer,
     FooterWrapper,
@@ -15,9 +16,13 @@ import {
     WebsiteRights, WebsiteRightsSpan
 
 } from "./FooterElements";
-import {FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube} from "react-icons/fa";
+import {FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter, FaYoutube} from "react-icons/fa";
 
 const Footer = () => {
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    }
+
     return (
         <FooterContainer>
             <FooterWrapper>
@@ -61,31 +66,19 @@ const Footer = () => {
                 </FooterLinksContainer>
                 <SocialMedia>
                     <SocialMediaWrapper>
-                        <SocialLogo to='/'>
-                            Travel
+                        <SocialLogo to='/' onClick={toggleHome()}>
+                            Eugenia
                         </SocialLogo>
-                        <WebsiteRights>
-                           Travel ©  {new Date().getFullYear()}
+                        <WebsiteRights >
+                          Build by Eugenia ©  {new Date().getFullYear()}
                             <WebsiteRightsSpan>All rights reserved.</WebsiteRightsSpan>
                         </WebsiteRights>
                         <SocialIcons>
-                            <SocialIconLink href="//www.facebook.com" target="_blank"
-                                            aria-label="Facebook">
-                             <FaFacebook />
+                            <SocialIconLink href="//github.com/GeniaPiano" target="_blank"
+                                            aria-label="Github">
+                             <FaGithub />
                             </SocialIconLink>
-                            <SocialIconLink href="//www.instagram.com" target="_blank"
-                                            aria-label="Instagram">
-                                <FaInstagram />
-                            </SocialIconLink>
-                            <SocialIconLink href="/" target="_blank"
-                                            aria-label="Twitter">
-                                <FaTwitter />
-                            </SocialIconLink>
-                            <SocialIconLink href="/" target="_blank"
-                                            aria-label="Youtube">
-                                <FaYoutube />
-                            </SocialIconLink>
-                            <SocialIconLink href="/" target="_blank"
+                            <SocialIconLink href="//www.linkedin.com/in/eugenia-kwon-kominek-5892a3242/" target="_blank"
                                             aria-label="Linkedin">
                                 <FaLinkedin />
                             </SocialIconLink>

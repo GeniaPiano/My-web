@@ -5,9 +5,9 @@ import Img3 from "../../images/svg-3.svg";
 import {
     InfoContainer, InfoWrapper, InfoRow,
     Column1, Column2, TopLine, TextWrapper,
-    Heading, Subtitle, BtnWrapper, ImgWrapper, Img
+    Heading, Subtitle, BtnWrapper, ImgWrapper, Img, Button
 } from "./InfoSectionElements";
-import {Button} from "../ButtonElement/ButtonElement";
+
 
 
 
@@ -38,7 +38,7 @@ const InfoSection = ({lightBg,
                               <Heading lightText={lightText}>  {headline} </Heading>
                               <Subtitle darkText={darkText}> {description} </Subtitle>
                               <BtnWrapper>
-                                  <Button to="home"
+                                  <Button to="/"
                                   smooth={true}
                                   duration={500}
                                   spy={true}

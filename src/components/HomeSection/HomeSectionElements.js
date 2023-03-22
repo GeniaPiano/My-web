@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {MdKeyboardArrowRight, MdArrowForward} from "react-icons/md";
+import {Link} from 'react-router-dom';
 
 export const HomeContainer = styled.div`
   background: #0c0c0c;
@@ -9,8 +10,7 @@ export const HomeContainer = styled.div`
   padding: 0 30px;
   height: 800px;
   position: relative;
-  z-index: -1;
-  
+  z-index: -1;  
   //:before{
   //  content: '';
   //  position: absolute;
@@ -37,11 +37,11 @@ export const HomeBackground = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: #232a34;
-`;
+  background-image: linear-gradient(to top, #351142, #38144a, #3a1753, #3b1a5c, #3b1e66, #341f64, #2d1f62, #261f60, #191b51, #0d1642, #061033, #010525);
+  `;
 
 export const HomeContent = styled.div`
-  ndex: 3;
+  z-index: 3;
   max-width: 1200px;
   position: absolute;
   padding:  8px 24px;
@@ -67,18 +67,30 @@ export const HomeH1 = styled.h1`
 
 export const HomePara = styled.p`
   margin-top: 24px;
+  max-width: 600px;
+
+`;
+
+export const HomeSpan1 = styled.span`
+   font-weight: bold;
   color: #fff;
   font-size: 24px;
   text-align: center;
-  max-width: 600px;
-  
+
+
   @media screen and (max-width: 768px) {
     font-size: 24px;
   }
-  
+
   @media screen and(max-width: 480px) {
     font-size:18px;
   }
+`;
+
+export const HomeSpan2 = styled.span`
+  font-weight: normal;
+  color: #fff;
+  padding-left: 8px;  
 `;
 
 export const HomeBtnWrapper = styled.div`
@@ -98,16 +110,49 @@ export const ArrowRight = styled(MdArrowForward)`
   font-size: 20px;
 `;
 
-
-
-
-
-
-
-
-// export const VideoBg = styled.div`
-//   width: 100%;
-//   height: 100%;
-//   -o-object-fit: cover;
-//   object-fit: cover;
+// export const HomeButton = styled(Link)`
+//   border-radius: 50px;
+//   background: #8d3eda;
+//   white-space: nowrap;
+//   padding: 14px 48px;
+//   color: #010606;
+//   font-size:20px;
+//   outline: none;
+//   border: none;
+//   cursor: pointer;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   transition: all 0.2s ease-in-out;
+//
+//   &:hover {
+//     transition: all 0.2s ease-in-out;
+//     opacity: 0.8;
+//     color: #9f61dc;
+//   }
+//
+//   @media screen and (max-width: 748px) {
+//     padding: 12px 30px;
+//     font-size: 16px;
+//   }
 // `;
+
+export const HomeButton = styled(Link)`
+  border-radius: 50px;
+  background: #9451d5;
+  white-space: nowrap;
+  padding: 16px 64px;
+  color: #010606;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #b183de;
+    color: #010606;
+  }
+`;
