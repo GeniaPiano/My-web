@@ -9,7 +9,9 @@ import {
     NavItem,
     NavLinks,
     NavBtnLink,
+    NavLogoImg
 } from "./NavbarElements";
+import LogoIcon from '../../images/logo-icon.svg';
 import {animateScroll as scroll} from "react-scroll";
 
 
@@ -24,7 +26,7 @@ const Navbar = ({ toggle }) => {
                 <Nav>
                     <NavbarContainer>
                         <NavLogo to="/" onClick={toggleHome}>
-                                    Eugenia
+                            <NavLogoImg src={LogoIcon} />   <span>Eugenia</span>
                         </NavLogo>
                         <MobileIcon onClick={toggle} >
                               <FaBars />

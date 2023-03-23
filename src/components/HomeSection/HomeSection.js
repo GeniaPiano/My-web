@@ -4,8 +4,6 @@ import {
     HomeBtnWrapper,
     HomeContainer,
     HomeContent,
-    HomeHeading,
-    HomePara,
     HomeButton, HomeH1, HomeP, HomeText, HomeImg, HomeImgWrapper
 } from "./HomeSectionElements";
 
@@ -35,7 +33,7 @@ const HomeSection = () => {
                     </HomeText>
 
                     <HomeImgWrapper>
-                        <HomeImg src={Img}></HomeImg>
+                        <HomeImg src={Img} alt={''}></HomeImg>
                     </HomeImgWrapper>
 
                 </HomeContent>

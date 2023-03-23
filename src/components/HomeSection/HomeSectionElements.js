@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import {Link as LinkScroll} from 'react-router-dom';
+import styled, { keyframes } from 'styled-components';
+import { Link as LinkScroll } from 'react-router-dom';
 
 export const HomeContainer = styled.div`
   background: #0c0c0c;
@@ -41,7 +41,7 @@ export const HomeContent = styled.div`
   @media screen and (max-width: 768px) {
     flex-direction: column;
     gap: 0;
-    padding: 30px;    
+    padding: 30px 15px 10px 15px;    
   }  
 `;
 
@@ -130,11 +130,23 @@ export const HomeImgWrapper = styled.div`
 
 `;
 
+const move = keyframes`
+  0%, 100% {
+    transform: translateY(50px);    
+  }  
+ 40% {
+   transform: rotate(10deg);
+ } 
+ 60% {
+    transform: translateY(0px);
+  }
+
+`;
+
 export const HomeImg = styled.img`
   height: 600px;
   width: 450px;
-  animation: moveUpDown 2s infinite;
-
+  animation: ${move} 5s linear infinite;
 
   @media screen and (max-width: 768px) {
     height: 400px;
@@ -145,7 +157,6 @@ export const HomeImg = styled.img`
     height: 200px;
     width: 190px;
   }
-
-
-  
+    
 `;
+
