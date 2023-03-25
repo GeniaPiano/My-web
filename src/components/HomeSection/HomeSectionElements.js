@@ -1,5 +1,7 @@
 import styled, { keyframes } from 'styled-components';
-import { Link as LinkScroll } from 'react-router-dom';
+import { Link as LinkScroll } from 'react-scroll';
+
+
 
 export const HomeContainer = styled.div`
   background: #0c0c0c;
@@ -9,7 +11,7 @@ export const HomeContainer = styled.div`
   padding: 0 30px;
   height: 800px;
   position: relative;
-  z-index: -1;  
+  z-index: 1;  
 `;
 
 
@@ -21,6 +23,7 @@ export const HomeBackground = styled.div`
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -35,10 +38,10 @@ export const HomeContent = styled.div`
   display: flex;
   gap: 120px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 908px) {
     flex-direction: column;
     gap: 0;
     padding: 30px 15px 10px 15px;    
@@ -52,37 +55,14 @@ export const HomeText = styled.div`
   justify-content: space-between;  
 `;
 
-
-export const HomeHeading = styled.p`
-  color: #fff;
-  padding-top:70px;
-  font-size:21px ;
-
-  
-  @media screen and (max-width: 768px) {
-    font-size: 18px;
-  }
-  
-  @media screen and (max-width: 480px) {
-    font-size: 14px;
-  }
-`;
-
-export const HomePara = styled.div`
-  margin-top: 24px;
-  max-width: 600px;
-  justify-items: center;
-
-`;
-
 export const HomeH1 = styled.h1`
   font-weight: bold;
   color: #fff;
-  font-size: 38px;
-  text-align: center;
+  font-size: 60px;
+  text-align: start;
   
   @media screen and (max-width: 768px) {
-    font-size: 25px;
+    font-size: 35px;
     text-align: start;
   }
 
@@ -102,32 +82,42 @@ export const HomeBtnWrapper = styled.div`
   margin-top: 40px;
   display: flex;
   align-items: center;
+
+
+
   `;
 
 
 export const HomeButton = styled(LinkScroll)`
-  color: #fff;
+  color: #010606;
+  z-index: 1111;
   display: flex;
-  align-items: center;
+  background-image: linear-gradient(to right, #a28ad9, #7538f6);
   text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
+  padding: 10px 30px;
+  border-radius: 20px;
   cursor: pointer;
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    color: #7a47e5;
-    transform: scale(1.1);
+
+    color: #fff;
   }
 
-  &.active {
-    border-bottom: 3px solid #7a47e5;
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+    text-align: center;
   }
+
+
+
 `;
 
 
 export const HomeImgWrapper = styled.div`
-
+   transition: 0.3s ease-in-out;
+    
+  
 `;
 
 const move = keyframes`
@@ -147,6 +137,8 @@ export const HomeImg = styled.img`
   height: 600px;
   width: 450px;
   animation: ${move} 5s linear infinite;
+  
+ 
 
   @media screen and (max-width: 768px) {
     height: 400px;
@@ -156,7 +148,8 @@ export const HomeImg = styled.img`
   @media screen and(max-width: 480px) {
     height: 200px;
     width: 190px;
-  }
-    
+  }    
 `;
+
+
 

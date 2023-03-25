@@ -6,13 +6,15 @@ import {
     HomeContent,
     HomeButton, HomeH1, HomeP, HomeText, HomeImg, HomeImgWrapper
 } from "./HomeSectionElements";
-
 import Img from '../../images/avatar.svg';
 
 
-
 const HomeSection = () => {
+
+
      return (
+<>
+
         <HomeContainer>
             <HomeBackground>
                 <HomeContent>
@@ -23,14 +25,17 @@ const HomeSection = () => {
                         </HomeP>
                         <HomeH1> web developer </HomeH1>
 
-
                         <HomeP>photographer & pianist</HomeP>
                         <HomeBtnWrapper>
-                            <HomeButton to='about'>
+                            <HomeButton
+                                to="about" smooth={true}
+                                duration={500}
+                                offset={-100}>
                                 Learn more
                             </HomeButton>
                         </HomeBtnWrapper>
-                    </HomeText>
+                   </HomeText>
+
 
                     <HomeImgWrapper>
                         <HomeImg src={Img} alt={''}></HomeImg>
@@ -39,6 +44,7 @@ const HomeSection = () => {
                 </HomeContent>
             </HomeBackground>
         </HomeContainer>
+</>
     )
 }
 

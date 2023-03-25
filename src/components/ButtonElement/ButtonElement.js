@@ -2,24 +2,27 @@ import styled from 'styled-components';
 import {Link} from 'react-scroll';
 
 export const Button = styled(Link)`
-  border-radius: 50px;
-  background: ${({primary}) => (primary ? '#01BF71' : '#010606')};
-  white-space: nowrap;
-  padding: ${({big}) => (big ?  '14px 48px' : '12px 30px')};
-  color: ${({dark}) => (dark ? '#010606' : '#fff')};
-  font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
-  outline: none;
-  border: none;
+  color: #010606;
+  display: flex;
+  background-image: linear-gradient(to right, #a28ad9, #7538f6);
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 20px;
   cursor: pointer;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s ease-in-out;
-  
+ 
+
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: ${({primary}) => (primary ? '#fff' : '#01BF71')};
+
+    color: #fff;
   }
-  
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+
+
 `;
 

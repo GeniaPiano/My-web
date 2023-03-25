@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link as LinkR} from 'react-router-dom';
 import { Link as LinkScroll} from 'react-scroll';
 
 
@@ -31,8 +30,7 @@ export const NavbarContainer = styled.div`
     max-width:1100px;
 `
 
-export const NavLogo = styled(LinkR)`
-  //color: #fff;
+export const NavLogo = styled(LinkScroll)`
   justify-self: flex-start;
   cursor: pointer;
   display: flex;
@@ -43,20 +41,23 @@ export const NavLogo = styled(LinkR)`
   font-weight: bold;
   text-decoration: none;
   transition: 0.3s ease-in-out;
-  background-image: linear-gradient(to right, #b697fa, #6b36da);
+  background-image: linear-gradient(to right, #c1acf1, #6b36da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   &:hover {
-    background-image: linear-gradient(to left, #b697fa, #6b36da);
+    background-image: linear-gradient(to left, #c1acf1, #6b36da);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transform: scale(102%) ;
   }
 `;
 
 export const NavLogoImg = styled.img`
   width: 30px;
   height: 30px;
+  
+
   `;
 
 export const MobileIcon = styled.div`
@@ -65,6 +66,11 @@ export const MobileIcon = styled.div`
 
   &:hover {
     color: #b697fa;
+  }
+
+
+  &:active {
+    color: #4f12d3;
   }
 
   @media screen and (max-width: 768px) {
@@ -116,44 +122,6 @@ export const NavLinks = styled(LinkScroll)`
   }
 `;
 
-// export const NavBtn = styled.nav`
-//   display: flex;
-//   align-items: center;
-//
-//   @media screen and(max-width: 768px) {
-//     display: none;
-//   }
-// `;
 
-export const NavBtnLink = styled(LinkR)`
-  //border-radius: 50px;
-  //background: #6a39d2;
-  //white-space: nowrap;
-  //padding: 10px 22px;
-  //color: #010606;
-  //font-size: 16px;
-  //outline: none;
-  //border: none;
-  //cursor: pointer;
-  //transition: all 0.2s ease-in-out;
-  //text-decoration: none;
 
-  color: #fff;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
-  cursor: pointer;
-  
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    color:#7a47e5;
-    transform: scale(1.1);
-  }
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-`;
 

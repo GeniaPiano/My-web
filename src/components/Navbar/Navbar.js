@@ -8,26 +8,19 @@ import {
     NavMenu,
     NavItem,
     NavLinks,
-    NavBtnLink,
     NavLogoImg
 } from "./NavbarElements";
-import LogoIcon from '../../images/logo-icon.svg';
-import {animateScroll as scroll} from "react-scroll";
+
+import Logo from "../Logo/Logo";
 
 
 const Navbar = ({ toggle }) => {
-
-    const toggleHome = () => {
-        scroll.scrollToTop();
-    }
 
         return (
             <>
                 <Nav>
                     <NavbarContainer>
-                        <NavLogo to="/" onClick={toggleHome}>
-                            <NavLogoImg src={LogoIcon} />   <span>Eugenia</span>
-                        </NavLogo>
+                        <Logo />
                         <MobileIcon onClick={toggle} >
                               <FaBars />
                         </MobileIcon>
@@ -63,9 +56,14 @@ const Navbar = ({ toggle }) => {
                                 </NavLinks>
                              </NavItem>
                              <NavItem>
-                                <NavBtnLink to='contact'>
-                                    Contact
-                                </NavBtnLink>
+                                 <NavLinks to='contact'
+                                           smooth={true}
+                                           duration={500}
+                                           spy={true}
+                                           exact='true'
+                                           offset={-80}>
+                                     Contact
+                                 </NavLinks>
                              </NavItem>
                         </NavMenu>
                     </NavbarContainer>

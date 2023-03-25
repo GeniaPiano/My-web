@@ -14,9 +14,9 @@ import {
 
 } from "./ProjectElements";
 
-const Projects = () => {
+const Projects = ({ projectsRef }) => {
     return (
-        <ProjectsContainer id="projects">
+        <ProjectsContainer id="projects" ref={ projectsRef }>
                 <ProjectH1>
                     Projects
                 </ProjectH1>

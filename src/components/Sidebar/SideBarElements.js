@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import {FaTimes} from 'react-icons/fa';
-import {Link as LinkRoute} from 'react-router-dom';
 import {Link as LinkScroll} from 'react-scroll';
 
 export const SidebarContainer = styled.aside`
@@ -19,6 +18,14 @@ export const SidebarContainer = styled.aside`
 
 export const CloseIcon = styled(FaTimes)`
   color: #fff;
+
+  &:hover {
+    color: #b697fa;
+  }
+
+  &:active {
+    color: #4f12d3;
+  }
 `;
 
 export const Icon = styled.div`
@@ -29,6 +36,8 @@ export const Icon = styled.div`
     font-size: 2rem;
     cursor: pointer;
     outline:none;
+
+
 `;
 
 export const SidebarWrapper = styled.div`
@@ -68,9 +77,12 @@ export const SidebarBtnWrap = styled.div`
 `;
 
 
-export const SidebarRoute  = styled(LinkRoute)`
+export const SidebarBtn  = styled(LinkScroll)`
   border-radius: 50px;
-  background: #9451d5;
+  //background: #9451d5;
+  background-image: linear-gradient(to right, #a28ad9, #6b36da);
+  //-webkit-background-clip: text;
+  //-webkit-text-fill-color: transparent;
   white-space: nowrap;
   padding: 16px 64px;
   color: #010606;
@@ -78,13 +90,13 @@ export const SidebarRoute  = styled(LinkRoute)`
   outline: none;
   border: none;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   text-decoration: none;
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #b183de;
-    color: #010606;
+    opacity: 0.8;
+    color: #fff;
   }
 `;
 

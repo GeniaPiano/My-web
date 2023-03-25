@@ -5,7 +5,7 @@ import {GlobalStyle} from './styles/GlobalStyle';
 import {theme} from './styles/theme'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from "./pages/Home";
-import Contact from "./pages/Contact";
+
 
 
 
@@ -16,7 +16,6 @@ const App = () => {
             <GlobalStyle />
             <Switch>
                 <Route path="/" component={Home} exact />
-                <Route path="/contact" component={Contact} exact />
             </Switch>
         </ThemeProvider>
     </Router>
