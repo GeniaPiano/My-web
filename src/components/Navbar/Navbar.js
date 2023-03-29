@@ -4,11 +4,9 @@ import {
     MobileIcon,
     Nav,
     NavbarContainer,
-    NavLogo,
     NavMenu,
     NavItem,
     NavLinks,
-    NavLogoImg
 } from "./NavbarElements";
 
 import Logo from "../Logo/Logo";

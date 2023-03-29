@@ -30,36 +30,6 @@ export const NavbarContainer = styled.div`
     max-width:1100px;
 `
 
-export const NavLogo = styled(LinkScroll)`
-  justify-self: flex-start;
-  cursor: pointer;
-  display: flex;
-  font-size: 1.5rem;
-  gap: 5px;
-  align-items: center;
-  margin-left: 24px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: 0.3s ease-in-out;
-  background-image: linear-gradient(to right, #c1acf1, #6b36da);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  &:hover {
-    background-image: linear-gradient(to left, #c1acf1, #6b36da);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform: scale(102%) ;
-  }
-`;
-
-export const NavLogoImg = styled.img`
-  width: 30px;
-  height: 30px;
-  
-
-  `;
-
 export const MobileIcon = styled.div`
   display: none;
   transition: 0.3s ease-in-out;
@@ -118,7 +88,7 @@ export const NavLinks = styled(LinkScroll)`
   }
 
   &.active {
-    border-bottom: 3px solid #7a47e5;
+    border-bottom: 4px solid #9869fc;
   }
 `;
 

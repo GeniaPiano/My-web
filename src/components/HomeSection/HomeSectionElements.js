@@ -28,7 +28,9 @@ export const HomeBackground = styled.div`
   height: 100%;
   overflow: hidden;
   background-image: linear-gradient(to top, #351142, #38144a, #3a1753, #3b1a5c, #3b1e66, #341f64, #2d1f62, #261f60, #191b51, #0d1642, #061033, #010525);
-  `;
+  `
+
+
 
 export const HomeContent = styled.div`
   z-index: 3;

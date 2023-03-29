@@ -19,14 +19,6 @@ export const FooterWrapper = styled.div`
   }
       `;
 
-
-
-export const SocialMedia = styled.section`
-  max-width: 1000px;
-  width:100%;
-`;
-
-
 export const WebsiteRights = styled.small`
   color: #fff;
   margin-bottom: 16px;

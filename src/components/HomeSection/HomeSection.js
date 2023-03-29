@@ -4,9 +4,10 @@ import {
     HomeBtnWrapper,
     HomeContainer,
     HomeContent,
-    HomeButton, HomeH1, HomeP, HomeText, HomeImg, HomeImgWrapper
+    HomeButton, HomeH1, HomeP, HomeText, HomeImg, HomeImgWrapper, HomeBackgroundStars
 } from "./HomeSectionElements";
 import Img from '../../images/avatar.svg';
+
 
 
 const HomeSection = () => {
@@ -21,16 +22,19 @@ const HomeSection = () => {
 
                     <HomeText>
                         <HomeP>
-                            Hi, I am Eugenia
+                            Hello world! I am Eugenia
                         </HomeP>
-                        <HomeH1> web developer </HomeH1>
+                        <HomeH1> Junior developer</HomeH1>
 
                         <HomeP>photographer & pianist</HomeP>
                         <HomeBtnWrapper>
                             <HomeButton
-                                to="about" smooth={true}
+                                to="about"
+                                smooth={true}
                                 duration={500}
-                                offset={-100}>
+                                spy={true}
+                                exact='true'
+                                offset={-80}>
                                 Learn more
                             </HomeButton>
                         </HomeBtnWrapper>
@@ -40,6 +44,7 @@ const HomeSection = () => {
                     <HomeImgWrapper>
                         <HomeImg src={Img} alt={''}></HomeImg>
                     </HomeImgWrapper>
+
 
                 </HomeContent>
             </HomeBackground>

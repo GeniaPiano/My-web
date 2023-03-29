@@ -1,10 +1,9 @@
 import styled from 'styled-components';
-import {Link} from "react-scroll";
 
 
 export const AboutContainer = styled.div`
  
-  color:#fff;
+  color:black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +17,8 @@ export const AboutContainer = styled.div`
 `;
 
 export const AboutBackground = styled.div`
-  background-image: linear-gradient(to bottom, #351142, #38144a, #3a1753, #3b1a5c, #341f64, #2d1f62, #261f60, #191b51, #0d1642, #061033, #010525);
+  //background-image: linear-gradient(to bottom, #351142, #38144a, #3a1753, #3b1a5c, #341f64, #2d1f62, #261f60, #191b51, #0d1642, #061033, #010525);
+  background: #fff;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -50,11 +50,16 @@ export const AboutContent = styled.div`
   gap: 120px;
   align-items: center;
   justify-content: flex-start;
-  
-  
+
+  @media screen and (max-width: 9000px) {
+    gap:80px;
+   justify-content: space-between;
+    padding: 30px 50px 10px 50px;
+  }
+
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    gap: 0;
+    gap:20px ;
     padding: 30px 15px 10px 15px;    
   }  
  `;
@@ -65,12 +70,12 @@ export const AboutImgWrapper = styled.div`
 
 export const AboutImg = styled.img`
   height: 400px;
-  width: 320px;
+  width: 280px;
   border-radius: 20px;
 
   @media screen and (max-width: 768px) {
     height: 400px;
-    width: 320px;
+    width: 270px;
   }
 
   @media screen and(max-width: 480px) {
@@ -83,20 +88,40 @@ export const AboutImg = styled.img`
 
 export const AboutBtnWrapper = styled.div`
   margin-top: 40px;
-  display: flex;
-  align-items: center;
-
 
 
   `;
 
 export const AboutText = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 `;
 
 export const AboutH1  = styled.h1`
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: end;
+  
+  @media screen and (max-width: 768px) {
+    font-size: 25px;
+  }
 `;
 
-export const AboutP = styled.p``;
+export const AboutH2 = styled.h2`
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 10px;    
+  
+  @media screen and (max-width: 768px) {
+    font-size: 25px;
+  }
+`;
+
+export const AboutP = styled.p`
+text-align: justify;
+`;
 
 
 
