@@ -1,19 +1,20 @@
 import styled from 'styled-components';
 import {Link} from 'react-scroll';
 
-export const Button = styled(Link)`
-  color: #010606;
+export const ButtonTransparent = styled(Link)`
+  color: #a28ad9;
   display: flex;
-  background-image: linear-gradient(to right, #a28ad9, #7538f6);
+  background: transparent;
   text-decoration: none;
-  padding: 10px 30px;
+  padding: 20px 40px;
   border-radius: 20px;
+  border: solid 2px  #a28ad9;
   cursor: pointer;
- 
+
 
   &:hover {
     transition: all 0.2s ease-in-out;
-
+    background-color:#a28ad9 ;
     color: #fff;
   }
 
@@ -23,7 +24,5 @@ export const Button = styled(Link)`
     padding: 14px 20px;
   }
 
-
-
-`;
+`
 

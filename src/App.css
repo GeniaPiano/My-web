@@ -1,26 +1,48 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-/*html {*/
-/*    box-sizing: border-box;*/
-/*}*/
+html {
+    box-sizing: border-box;
+}
 
-/**, *::after, *::before {*/
-/*    box-sizing: inherit;*/
+*, *::after, *::before {
+    box-sizing: inherit;
 
-/*}*/
+}
 
-/**{*/
-/*    margin: 0;*/
-/*    padding: 0;*/
+*{
+    margin: 0;
+    padding: 0;
 
-/*}*/
+}
 
 
-/*body {*/
-/*    font-family: 'Montserrat', sans-serif;*/
-/*}*/
-/*button, a {*/
-/*    font-family: 'Montserrat', sans-serif;*/
-/*}*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    min-height: 100vh;
+    overflow: scroll;
+
+}
+button, a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent !important;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #a28ad9, #7538f6);
+    border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #7538f6, #a28ad9);
+}
 
 

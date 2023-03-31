@@ -3,53 +3,56 @@ import styled from 'styled-components';
 
 export const ProjectsContainer = styled.div`
   
-  padding-top: -80px;
+  //padding-top: -80px;
   height: 800px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   background: #010606;
   
-  @media screen and (max-width: 768px) {
-    height: 1100px;
+    @media screen and (max-width: 768px) {
+    height: 1000px;
   }
   
-  @media screen and(max-width: 480px) {
-    height: 1300px;
+  @media screen and (max-width: 480px) {
+    height: 1100px;
   }
 `;
 
 export const ProjectsWrapper = styled.div`
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items:center;
+  justify-content: center;
   grid-gap: 16px;
-  padding: 0 50px;
-  
-  @media screen and (max-width: 1000px) {
-    grid-template-columns: 1fr;
+  padding: 30px 50px;
+
+  @media screen and (max-width: 900px) {
+    grid-template-columns: 1fr 1fr;
   }
   
-  @media screen and(max-width: 768px) {
+  @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
-    padding: 0 20px;
+    padding: 30px 0;
   }
-`;
+ 
+  `;
 
 export const ProjectCard = styled.div`
-  background: #fff;
+  background: #151d25;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   border-radius: 10px;
-  max-height: 360px;
+  max-height: 380px;
   padding: 30px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.2);
   transition: all 0.2s ease-in-out;
+  height: 380px;
   
   
   &:hover {
@@ -68,7 +71,7 @@ export const ProjectIcon = styled.img`
 export const ProjectH1 = styled.h1`
   font-size: 2.5rem;
   color: #fff;
-  margin-bottom: 64px;
+  margin-bottom: 50px;
   
   @media screen and (max-width: 480px) {
     font-size: 2rem;
@@ -76,18 +79,36 @@ export const ProjectH1 = styled.h1`
   `;
 
 export const ProjectH2 = styled.h2`
-  font-size: 1rem;
+  font-size: 18px;
   margin-bottom: 10px;
-  color: #010606;
+  color: #fff;
 `;
 
 export const ProjectP = styled.p`
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
-  color: #010606;
+  color: #fff;
   
-  @media screen and(max-width: 768px) {
-    font-size: 10px;
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
   }
 `;
 
+export const ProjectDivTech = styled.div`
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  
+`
+
+export  const TechName = styled.div`
+ 
+  padding: 3px 12px;
+  color: #a28ad9;
+  border-radius: 20px;
+  border: solid 2px #a28ad9;
+
+
+
+`;

@@ -13,7 +13,8 @@ const Logo = () => {
 
     return (
         <LogoLinked onClick={toggleHome}>
-            <LogoImg src={LogoIcon} />  <span>Eugenia</span>
+            {/*<LogoImg src={LogoIcon} />  */}
+            <span>Eugenia</span>
         </LogoLinked>
     )
 }

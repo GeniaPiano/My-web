@@ -25,7 +25,7 @@ const SideBar = ({isOpen, toggle, scrollToRef, aboutRef, skillsRef, projectsRef,
                                  duration={500}
                                  spy={true}
                                  exact='true'
-                                 offset={-50}>
+                                 offset={-80}>
                         About
                     </SidebarLink>
                     <SidebarLink to="skills"
@@ -34,7 +34,7 @@ const SideBar = ({isOpen, toggle, scrollToRef, aboutRef, skillsRef, projectsRef,
                                  duration={500}
                                  spy={true}
                                  exact='true'
-                                 offset={80}>
+                                 offset={-80}>
                         Skills
                     </SidebarLink>
                     <SidebarLink to="projects"
