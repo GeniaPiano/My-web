@@ -44,6 +44,8 @@ export const SkillsWrapper = styled.div`
 `;
 
 
+
+
 export const SkillsHeading = styled.h1`
  padding: 20px
 `;
@@ -52,11 +54,22 @@ export const SkillsHeading = styled.h1`
 
 export const SkillsH3 = styled.h3`
  margin-top: 20px;
- margin-bottom: 10px;
+ margin-bottom: 30px;
+ 
+`;
+
+export  const SkillsAlleBoxes = styled.div`
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  
+  
 `;
 
 export const SkillsBox = styled.div`
  padding: 20px;
+ display: flex;
+ flex-direction: column ;
 
  @media screen and (max-width: 768px) {
  padding-bottom: 0;
@@ -66,28 +79,33 @@ export const SkillsBox = styled.div`
 
 
  export const SkillsList = styled.ul`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   
-   
-  @media screen and (max-width: 1000px) {
-   grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  @media screen and (max-width: 768px) {
-   grid-template-columns: 1fr 1fr;
-   gap: 15px;
-  }
+  //display: grid;
+  //grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  //gap: 20px;
+  //
+  // 
+  //@media screen and (max-width: 1000px) {
+  // grid-template-columns: 1fr 1fr 1fr;
+  //}
+  //
+  //@media screen and (max-width: 768px) {
+  // grid-template-columns: 1fr 1fr;
+  // gap: 15px;
+  //}
   
  `;
 
-export const SkillsItemDiv = styled.li`
+export const SkillsItemLi = styled.li`
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(to right, #a28ad9, #7538f6, #7d16b7);
   padding: 15px 30px;
   border-radius: 30px;
+  // color: ${({border}) => (border ? 'red' : 'green' )};
 
   @media screen and (max-width: 900px) {
     padding: 15px 25px;

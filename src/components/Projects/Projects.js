@@ -13,6 +13,8 @@ import {
 
 } from "./ProjectElements";
 
+
+
 const Projects = ({ projectsRef }) => {
     return (
         <ProjectsContainer id="projects" ref={ projectsRef }>
@@ -35,16 +37,13 @@ const Projects = ({ projectsRef }) => {
                     </ProjectCard>
 
                     <ProjectCard>
-                        <ProjectH2>School Menager</ProjectH2>
+                        <ProjectH2>Personal Portfolio Project</ProjectH2>
                         <ProjectP>
-                            Helps to manage your language school.
+                            Website about me
                         </ProjectP>
                         <ProjectDivTech>
-                            <TechName>Css</TechName>
-                            <TechName>Javascript</TechName>
-                            <TechName>NodeJs</TechName>
-                            <TechName>ExpressJs</TechName>
-                            <TechName>HanldeBars</TechName>
+                            <TechName>React</TechName>
+                            <TechName>Styled components</TechName>
                         </ProjectDivTech>
                     </ProjectCard>
 

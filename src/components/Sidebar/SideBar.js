@@ -55,7 +55,7 @@ const SideBar = ({isOpen, toggle, scrollToRef, aboutRef, skillsRef, projectsRef,
                                 duration={500}
                                 spy={true}
                                 exact='true'
-                                offset={80}>
+                                offset={-80}>
                         Contact
                     </SidebarBtn>
                 </SidebarBtnWrap>

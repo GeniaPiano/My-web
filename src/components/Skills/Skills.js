@@ -4,12 +4,18 @@ import {
     SkillsContainer,
     SkillsHeading,
     SkillsBox,
-    SkillsItemDiv, SkillsList,
+    SkillsItemLi, SkillsList,
     SkillsH3,
-    SkillsWrapper, ButtonWrapper
+    SkillsWrapper, ButtonWrapper, SkillsAlleBoxes,
 
 } from './SkillsElements';
 import {ButtonTransparent} from "../ButtonElement/ButtonTransparent";
+
+const frontTech = ['Html', 'Css', 'Javascript', 'React','RWD', 'Bootstrap'];
+const backTech = ['NodeJs', 'ExpressJs', 'HandleBars', 'SQL', 'PhpMyAdmin','MongoDb'];
+const other = ['Git', 'Gthub', 'npm', 'HeidiSql', 'Photography', 'Photofiltre'];
+
+
 
 const SkillsSection = ({ skillsRef }) => {
     return  (
@@ -17,82 +23,40 @@ const SkillsSection = ({ skillsRef }) => {
             <SkillsBackground>
                 <SkillsWrapper>
                     <SkillsHeading>Skills</SkillsHeading>
+                    <SkillsAlleBoxes>
+                        <SkillsBox>
+                            <SkillsH3>
+                                Frontend
+                            </SkillsH3>
+                            <SkillsList>
+                                {frontTech.map((el)=> {
+                                    return <SkillsItemLi >{el}</SkillsItemLi>
+                                })}
+                            </SkillsList>
+                        </SkillsBox>
 
                         <SkillsBox>
+                            <SkillsH3>
+                                Backend
+                            </SkillsH3>
                             <SkillsList>
-                                <SkillsItemDiv>
-                                        HTML
-                                </SkillsItemDiv>
-
-                                <SkillsItemDiv>
-                                       CSS5
-                                </SkillsItemDiv>
-
-                                <SkillsItemDiv>
-                                      Javascript
-                                </SkillsItemDiv>
-
-                                <SkillsItemDiv>
-                                    Bootstrap
-                                </SkillsItemDiv>
-
-                                <SkillsItemDiv>
-                                    React
-                                </SkillsItemDiv>
-
-                                <SkillsItemDiv>
-                                    RWD
-                                </SkillsItemDiv>
-
-                                <SkillsItemDiv>
-                                    NodeJs
-                                </SkillsItemDiv>
-
-                                <SkillsItemDiv>
-                                    ExpressJs
-                                </SkillsItemDiv>
-
-                                <SkillsItemDiv>
-                                    HandleBars
-                                </SkillsItemDiv>
-
-                                <SkillsItemDiv>
-                                    Sql
-                                </SkillsItemDiv>
-
-                                <SkillsItemDiv>
-                                     MongoDb
-                                </SkillsItemDiv>
-
-                                <SkillsItemDiv>
-                                    Git
-                                </SkillsItemDiv>
-
-                                <SkillsItemDiv>
-                                    Github
-                                </SkillsItemDiv>
-
-                                <SkillsItemDiv>
-                                    Npm
-                                </SkillsItemDiv>
-
-                                <SkillsItemDiv>
-                                    PhpMyAdmin
-                                </SkillsItemDiv>
-
-                                <SkillsItemDiv>
-                                        Photography
-                                </SkillsItemDiv>
-
-                                <SkillsItemDiv>
-                                        Photofiltre
-                                </SkillsItemDiv>
-
+                                {backTech.map((el)=> {
+                                    return <SkillsItemLi>{el}</SkillsItemLi>
+                                })}
                             </SkillsList>
-
-
-
                         </SkillsBox>
+
+                        <SkillsBox>
+                            <SkillsH3>
+                                Other
+                            </SkillsH3>
+                            <SkillsList>
+                                {other.map((el)=> {
+                                    return <SkillsItemLi>{el}</SkillsItemLi>
+                                })}
+                            </SkillsList>
+                        </SkillsBox>
+                    </SkillsAlleBoxes>
 
                     <ButtonWrapper>
                         <ButtonTransparent to="projects"
