@@ -1,4 +1,6 @@
-import React from "react";
+import React, {useEffect} from  'react';
+import "aos/dist/aos.css";
+import Aos from 'aos';
 import {
     ContactBackground,
     ContactContainer,
@@ -10,35 +12,38 @@ import {
 } from "./ContactElements";
 
 const ContactSection = ({ contactRef }) => {
+
+    useEffect(()=> {
+        Aos.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+        })
+    })
+
   return (
     <ContactContainer id="contact" ref={contactRef}>
         <ContactBackground>
-            <ContactWrapper>
-                <ContactH1>You can
-                    <span> contact </span>
-                    me via</ContactH1>
+            <ContactWrapper data-aos='fade-up'>
+                <ContactH1>You can<span> contact </span>me via</ContactH1>
                 <ContactList>
-                    <ContactLi>
+                    <ContactLi href="https://www.linkedin.com/in/eugenia-kwon-kominek-5892a3242/" target="_blank">
                         <ContactLinkedInIcon />
                         <ContactTextItem>
                             Linkedin
                         </ContactTextItem>
                     </ContactLi>
-                    <ContactLi>
-                        <ContactMailIcon />
+                    <ContactLi  href="mailto:genia.piano@hotmail.com" target="_blank">
+                        <ContactMailIcon/>
                         <ContactTextItem>
                             E-mail
                         </ContactTextItem>
-
                     </ContactLi >
-                    <a href="mailto:genia.piano@hotmail.com" target="_blank">
-                        <ContactLi>
-
+                    <ContactLi>
                         <ContactTextItem>
-                           genia.piano@hotmail.com
+                            <small>genia.piano@hotmail.com</small>
                         </ContactTextItem>
                     </ContactLi>
-                    </a>
                 </ContactList>
             </ContactWrapper>
         </ContactBackground>

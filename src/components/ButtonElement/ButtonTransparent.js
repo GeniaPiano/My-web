@@ -8,13 +8,14 @@ export const ButtonTransparent = styled(Link)`
   text-decoration: none;
   padding: 20px 40px;
   border-radius: 20px;
-  border: solid 2px  #a28ad9;
+  border: solid 2px #a28ad9;
   cursor: pointer;
 
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background-color:#a28ad9 ;
+    background-color:#7538f6;
+    border-color: #7538f6;
     color: #fff;
   }
 

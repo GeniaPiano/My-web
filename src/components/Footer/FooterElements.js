@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
+
 
 export const FooterContainer = styled.div`
     background-color: #101522;
@@ -21,7 +21,6 @@ export const FooterWrapper = styled.div`
 
 export const WebsiteRights = styled.small`
   color: #fff;
-  margin-bottom: 16px;
   display: flex;
   
   @media screen and (max-width: 768px) {
@@ -47,7 +46,11 @@ export const SocialIcons = styled.div`
 
 `;
 
-export const SocialIconLink = styled(Link)`
+export const SocialIconLink = styled.a`
   color: #fff;  
   font-size: 24px;
+
+  &:hover{
+    color:#a28ad9;
+  }
 `;

@@ -29,11 +29,11 @@ const Footer = () => {
                 </WebsiteRights>
 
                 <SocialIcons>
-                    <SocialIconLink href="https://github.com" target="_blank"
+                    <SocialIconLink href="https://github.com/GeniaPiano/GeniaPiano" target="_blank"
                                             aria-label="Github">
                              <FaGithub />
                     </SocialIconLink>
-                    <SocialIconLink href="https://www.linkedin.com" target="_blank"
+                    <SocialIconLink href="https://www.linkedin.com/in/eugenia-kwon-kominek-5892a3242/" target="_blank"
                                             aria-label="Linkedin">
                                 <FaLinkedin />
                     </SocialIconLink>

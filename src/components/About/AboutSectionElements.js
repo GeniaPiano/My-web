@@ -72,20 +72,20 @@ export const AboutImgWrapper = styled.div`
   `;
 
 export const AboutImg = styled.img`
-  height: 380px;
-  width: 280px;
+  height: 450px;
+ 
   border-radius: 20px;
 
   
 
   @media screen and (max-width: 768px) {
     height: 400px;
-    width: 290px;
+    
   }
 
   @media screen and(max-width: 480px) {
     height: 200px;
-    width: 150px;
+  
   }
     
 `;
@@ -137,6 +137,7 @@ export const AboutH2 = styled.h2`
 
 export const AboutP = styled.p`
   text-align: justify;
+  text-indent: 40px;
      
   
 `;

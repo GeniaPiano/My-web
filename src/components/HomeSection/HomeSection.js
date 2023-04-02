@@ -1,10 +1,12 @@
 import React from 'react';
+import { TypeAnimation } from 'react-type-animation';
+
 import {
     HomeBackground,
     HomeBtnWrapper,
     HomeContainer,
     HomeContent,
-    HomeButton, HomeH1, HomeP, HomeText, HomeImg, HomeImgWrapper, HomeBackgroundStars
+    HomeButton, HomeH1, HomeP, HomeText, HomeImg, HomeImgWrapper,
 } from "./HomeSectionElements";
 import Img from '../../images/avatar.svg';
 
@@ -22,11 +24,36 @@ const HomeSection = () => {
 
                     <HomeText>
                         <HomeP>
-                            Hello world! I am Eugenia
+                            <TypeAnimation
+                                sequence={[
+                                    'Hi, I am Eugenia',
+                                ]}
+                                wrapper="span"
+                                cursor={false}
+                            />
                         </HomeP>
-                        <HomeH1> Junior developer</HomeH1>
+                        <HomeH1>
+                            <TypeAnimation
+                                sequence={[
+                                    1200,
+                                    'Javascript Developer',
+                                ]}
+                                wrapper="span"
+                                cursor={false}
+                            />
 
-                        <HomeP>photographer & pianist</HomeP>
+                        </HomeH1>
+
+                        <HomeP>
+                            <TypeAnimation
+                                sequence={[
+                                    2400,
+                                    'photographer and pianist',
+                                ]}
+                                wrapper="span"
+                                cursor={false}
+                            />
+                        </HomeP>
                         <HomeBtnWrapper>
                             <HomeButton
                                 to="about"

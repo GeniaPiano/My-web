@@ -6,12 +6,13 @@ export const SkillsContainer = styled.div`
  background: #0c0c0c;
  display: flex;
  justify-content: center;
- align-items: center;
+ align-items: start;
  position: relative;
  padding: 30px 50px;
 
  @media screen and (max-width: 900px) {
   padding: 30px 50px;
+  min-height: 900px;
  
  }
 
@@ -38,8 +39,7 @@ export const SkillsWrapper = styled.div`
 
   background: #151d25;
   border-radius: 30px;
-  padding: 10px 40px;
- 
+  padding: 10px 40px; 
  
 `;
 
@@ -55,6 +55,7 @@ export const SkillsHeading = styled.h1`
 export const SkillsH3 = styled.h3`
  margin-top: 20px;
  margin-bottom: 30px;
+ text-align: center;
  
 `;
 
@@ -62,6 +63,15 @@ export  const SkillsAlleBoxes = styled.div`
   display: flex;
   align-items: start;
   justify-content: space-evenly;
+
+ @media screen and (max-width: 900px) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ }
+
+ @media screen and (max-width: 768px) {
+  grid-template-columns: 1fr;
+ }
   
   
 `;
@@ -69,11 +79,14 @@ export  const SkillsAlleBoxes = styled.div`
 export const SkillsBox = styled.div`
  padding: 20px;
  display: flex;
- flex-direction: column ;
+ flex-direction: column;
 
  @media screen and (max-width: 768px) {
  padding-bottom: 0;
  }
+ 
+ 
+ 
 `;
 
 
@@ -81,21 +94,15 @@ export const SkillsBox = styled.div`
  export const SkillsList = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  
-  //display: grid;
-  //grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  //gap: 20px;
-  //
-  // 
-  //@media screen and (max-width: 1000px) {
-  // grid-template-columns: 1fr 1fr 1fr;
-  //}
-  //
-  //@media screen and (max-width: 768px) {
-  // grid-template-columns: 1fr 1fr;
-  // gap: 15px;
-  //}
+  gap: 10px;
+
+  @media screen and (max-width: 900px) {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+  }
+
+ 
+
   
  `;
 
@@ -103,9 +110,9 @@ export const SkillsItemLi = styled.li`
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(to right, #a28ad9, #7538f6, #7d16b7);
-  padding: 15px 30px;
+  padding: 11px 28px;
   border-radius: 30px;
-  // color: ${({border}) => (border ? 'red' : 'green' )};
+ 
 
   @media screen and (max-width: 900px) {
     padding: 15px 25px;

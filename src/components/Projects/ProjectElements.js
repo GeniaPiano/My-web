@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const ProjectsContainer = styled.div`
   padding-top: -80px;
   height: 800px;
@@ -54,7 +55,6 @@ export const ProjectCard = styled.div`
   border-radius: 20px;
   max-height: 380px;
   padding: 30px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
   height: 380px;
 
@@ -65,11 +65,6 @@ export const ProjectCard = styled.div`
   }
 `;
 
-export const ProjectIcon = styled.img`
-  height: 130px;
-  width: 130px;
-  margin-bottom: 10px;
-`;
 
 export const ProjectH1 = styled.h1`
   font-size: 2.5rem;
@@ -98,10 +93,11 @@ export const ProjectP = styled.p`
 `;
 
 export const ProjectDivTech = styled.div`
-  margin: 10px;
+  margin: 20px 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: ${({isColumn}) => (isColumn? '1fr' : '1fr 1fr' )};
   grid-gap: 5px;
+  
 `;
 
 export const TechName = styled.div`
@@ -110,3 +106,32 @@ export const TechName = styled.div`
   border-radius: 20px;
   border: solid 2px #a28ad9;
 `;
+
+export const ProjectIcons = styled.div`
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    
+  
+`;
+
+export const ProjectLink = styled.a`
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 45px;
+  height: 40px;
+  border: 2px solid #fff;
+  padding: 8px;
+  border-radius: 10px;
+  
+  &:hover {
+    color: #fff;
+    border-color: #a28ad9;
+    background: #a28ad9;
+  }
+
+`
+

@@ -60,7 +60,7 @@ export const HomeText = styled.div`
 export const HomeH1 = styled.h1`
   font-weight: bold;
   color: #fff;
-  font-size: 60px;
+  font-size: 50px;
   text-align: start;
   
   @media screen and (max-width: 768px) {

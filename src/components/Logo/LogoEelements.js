@@ -2,11 +2,10 @@ import styled from "styled-components";
 import { Link } from 'react-scroll';
 
 export const LogoLinked = styled(Link)`
-  justify-self: flex-start;
+  justify-self: center;
   cursor: pointer;
   display: flex;
   font-size: 1.5rem;
-  gap: 5px;
   align-items: center;
   font-weight: bold;
   text-decoration: none;
@@ -25,7 +24,3 @@ export const LogoLinked = styled(Link)`
 ` ;
 
 
-export const LogoImg = styled.img`
-  width: 30px;
-  height: 30px;
-`;

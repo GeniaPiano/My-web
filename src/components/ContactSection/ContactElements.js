@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FaLinkedin, FaEnvelope } from "react-icons/fa"
+import { FaLinkedin, FaEnvelope, FaCopy } from "react-icons/fa"
 
 export const ContactContainer = styled.div`
   padding-top: -80px;
@@ -9,6 +9,7 @@ export const ContactContainer = styled.div`
   justify-content: center;
   align-items: center;
   background: #010606;
+  
 
   @media screen and (max-width: 900px) {
     height: 600px;
@@ -22,7 +23,9 @@ export const ContactContainer = styled.div`
 `;
 
 export const ContactBackground = styled.div`
-  background: #151d25;
+  background-image: linear-gradient(to bottom, #351142, #38144a, #3a1753, #3b1a5c, #3b1e66, #341f64, #2d1f62, #261f60, #191b51, #0d1642, #061033, #010525);
+
+  //background: #151d25;
   top: 0;
   left: 0;
   right: 0;
@@ -92,7 +95,7 @@ export const ContactList = styled.div`
 
 
 
-export const ContactLi = styled.div`
+export const ContactLi = styled.a`
     color: #fff;
     border: solid 2px #fff;
     border-radius: 30px;
@@ -124,6 +127,17 @@ export const ContactLinkedInIcon = styled(FaLinkedin)`
 `;
 
 export const ContactMailIcon = styled(FaEnvelope)`
+    
+    width:25px;
+    height:25px;
+    transition: 0.3s ease;
+
+    &:hover{
+      transform: rotateY(720deg);
+    }
+`;
+
+export const ContactCopyIcon = styled(FaCopy)`
     
     width:25px;
     height:25px;

@@ -1,4 +1,7 @@
-import React from  'react';
+import React, {useEffect} from  'react';
+import "aos/dist/aos.css";
+import Aos from 'aos';
+
 import {
     SkillsBackground,
     SkillsContainer,
@@ -9,7 +12,8 @@ import {
     SkillsWrapper, ButtonWrapper, SkillsAlleBoxes,
 
 } from './SkillsElements';
-import {ButtonTransparent} from "../ButtonElement/ButtonTransparent";
+import { ButtonTransparent } from "../ButtonElement/ButtonTransparent";
+
 
 const frontTech = ['Html', 'Css', 'Javascript', 'React','RWD', 'Bootstrap'];
 const backTech = ['NodeJs', 'ExpressJs', 'HandleBars', 'SQL', 'PhpMyAdmin','MongoDb'];
@@ -18,13 +22,21 @@ const other = ['Git', 'Gthub', 'npm', 'HeidiSql', 'Photography', 'Photofiltre'];
 
 
 const SkillsSection = ({ skillsRef }) => {
+    useEffect(() => {
+        Aos.init({
+            offset: 200,
+            duration: 600,
+            easing: 'ease-in-sine',
+            });
+    },[])
+
     return  (
         <SkillsContainer id='skills' ref={skillsRef}>
             <SkillsBackground>
                 <SkillsWrapper>
                     <SkillsHeading>Skills</SkillsHeading>
                     <SkillsAlleBoxes>
-                        <SkillsBox>
+                        <SkillsBox data-aos="fade-up">
                             <SkillsH3>
                                 Frontend
                             </SkillsH3>
@@ -35,24 +47,24 @@ const SkillsSection = ({ skillsRef }) => {
                             </SkillsList>
                         </SkillsBox>
 
-                        <SkillsBox>
+                        <SkillsBox data-aos="fade-up">
                             <SkillsH3>
                                 Backend
                             </SkillsH3>
                             <SkillsList>
                                 {backTech.map((el)=> {
-                                    return <SkillsItemLi>{el}</SkillsItemLi>
+                                    return <SkillsItemLi >{el}</SkillsItemLi>
                                 })}
                             </SkillsList>
                         </SkillsBox>
 
-                        <SkillsBox>
+                        <SkillsBox data-aos="fade-up">
                             <SkillsH3>
                                 Other
                             </SkillsH3>
                             <SkillsList>
                                 {other.map((el)=> {
-                                    return <SkillsItemLi>{el}</SkillsItemLi>
+                                    return <SkillsItemLi >{el}</SkillsItemLi>
                                 })}
                             </SkillsList>
                         </SkillsBox>
