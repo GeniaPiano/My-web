@@ -36,7 +36,7 @@ const HomeSection = () => {
                             <TypeAnimation
                                 sequence={[
                                     1200,
-                                    'Javascript Developer',
+                                    'Welcome on my Website',
                                 ]}
                                 wrapper="span"
                                 cursor={false}
@@ -48,7 +48,7 @@ const HomeSection = () => {
                             <TypeAnimation
                                 sequence={[
                                     2400,
-                                    'photographer and pianist',
+                                    'I am developer, photographer and pianist',
                                 ]}
                                 wrapper="span"
                                 cursor={false}

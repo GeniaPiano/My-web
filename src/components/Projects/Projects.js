@@ -93,7 +93,7 @@ const Projects = ({ projectsRef }) => {
                                 <FaGithub/>
                             </ProjectLink>
 
-                            <ProjectLink href="https://replit.com/@GeniaPiano/To-do-list" target="_blank">
+                            <ProjectLink href="https://to-do-list.geniapiano.repl.co/" target="_blank">
                                 <FaEye/>
                             </ProjectLink>
                         </ProjectIcons>
