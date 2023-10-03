@@ -32,6 +32,7 @@ const AboutSection = ({ aboutRef }) => {
                             <AboutImgWrapper data-aos="fade-up">
                                 <AboutImg src={Img} alt={''}></AboutImg>
                             </AboutImgWrapper>
+
                             <AboutText data-aos="fade-up">
                                 <AboutH1> About me </AboutH1>
                                 <AboutH2>I love building stuff</AboutH2>

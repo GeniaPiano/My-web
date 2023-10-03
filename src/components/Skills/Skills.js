@@ -13,11 +13,10 @@ import {
 
 } from './SkillsElements';
 import { ButtonTransparent } from "../ButtonElement/ButtonTransparent";
+import {backTech, frontTech, other} from "./techData";
 
 
-const frontTech = ['Html', 'Css', 'Javascript', 'React','RWD', 'Bootstrap'];
-const backTech = ['NodeJs', 'ExpressJs', 'HandleBars', 'SQL', 'PhpMyAdmin','MongoDb'];
-const other = ['Git', 'Gthub', 'npm', 'HeidiSql', 'Photography', 'Photofiltre'];
+
 
 
 

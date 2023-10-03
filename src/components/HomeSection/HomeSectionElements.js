@@ -64,7 +64,7 @@ export const HomeH1 = styled.h1`
   text-align: start;
   
   @media screen and (max-width: 768px) {
-    font-size: 35px;
+    font-size: 2em;
     text-align: start;
   }
 

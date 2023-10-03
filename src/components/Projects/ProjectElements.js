@@ -30,7 +30,7 @@ export const ProjectsWrapper = styled.div`
   max-width: 1000px;
   margin: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
   grid-gap: 16px;
@@ -42,7 +42,7 @@ export const ProjectsWrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
-    padding: 30px 0;
+    padding: 40px 0;
   }
 `;
 

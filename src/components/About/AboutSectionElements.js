@@ -72,21 +72,23 @@ export const AboutImgWrapper = styled.div`
   `;
 
 export const AboutImg = styled.img`
-  height: 450px;
- 
+  min-width: 200px;
   border-radius: 20px;
 
   
 
   @media screen and (max-width: 768px) {
-    height: 400px;
-    
+    height:auto;    
   }
 
   @media screen and(max-width: 480px) {
-    height: 200px;
-  
+    height: auto;  
   }
+
+  @media screen and (max-width: 1200px) {
+    height:auto;
+  }
+  
     
 `;
 

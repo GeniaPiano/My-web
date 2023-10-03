@@ -15,6 +15,7 @@ import {
     ProjectLink
 
 } from "./ProjectElements";
+import {projectData} from "./projectData";
 
 
 
@@ -34,71 +35,28 @@ const Projects = ({ projectsRef }) => {
                     Chosen projects
                 </ProjectH1>
                 <ProjectsWrapper>
-                    <ProjectCard data-aos="fade-up">
-                        <ProjectH2>School Menager</ProjectH2>
-                        <ProjectP>
-                            Helps to manage your language school.
-                        </ProjectP>
-                        <ProjectDivTech>
-                            <TechName>Css</TechName>
-                            <TechName>Javascript</TechName>
-                            <TechName>Node Js</TechName>
-                            <TechName>Express Js</TechName>
-                            <TechName>HanldeBars</TechName>
-                        </ProjectDivTech>
-                        <ProjectIcons>
-                            <ProjectLink href="https://github.com/GeniaPiano/School-menager" target="_blank">
-                                <FaGithub/>
-                            </ProjectLink>
 
-                            <ProjectLink href="https://school-menager--geniapiano.repl.co/school" target="_blank">
-                                <FaEye/>
-                            </ProjectLink>
-                        </ProjectIcons>
-                    </ProjectCard>
+                  <> {projectData.map(project => (
+                        <ProjectCard data-aos="fade-up" key={project.name}>
+                            <ProjectH2>{project.name}</ProjectH2>
+                            <ProjectP>
+                                {project.headline}
+                            </ProjectP>
+                            <ProjectDivTech>
+                                {project.stack.map(el => <TechName key={el}>{el}</TechName>)}
+                            </ProjectDivTech>
 
-                    <ProjectCard data-aos="fade-up">
-                        <ProjectH2>Personal Portfolio Project</ProjectH2>
-                        <ProjectP>
-                            Website about me
-                        </ProjectP>
-                        <ProjectDivTech isColumn={true}>
-                            <TechName>React</TechName>
-                            <TechName>Styled components</TechName>
-                        </ProjectDivTech>
-                        <ProjectIcons>
-                            <ProjectLink href="https://github.com/GeniaPiano/Portfolio" target="_blank">
-                                <FaGithub/>
-                            </ProjectLink>
+                            <ProjectIcons>
+                                <ProjectLink href={project.github} target="_blank">
+                                    <FaGithub/>
+                                </ProjectLink>
+                                <ProjectLink href={project.live} target="_blank">
+                                     <FaEye/>
+                                </ProjectLink>
+                            </ProjectIcons>
+                        </ProjectCard>
+                        ))} </>
 
-                            <ProjectLink href="" target="_blank">
-                                <FaEye/>
-                            </ProjectLink>
-                        </ProjectIcons>
-                    </ProjectCard>
-
-                    <ProjectCard data-aos="fade-up">
-                        <ProjectH2>Tasks Saver</ProjectH2>
-                        <ProjectP>
-                            Can save your tasks.
-                        </ProjectP>
-                        <ProjectDivTech>
-                            <TechName>Css</TechName>
-                            <TechName>Javascript</TechName>
-                            <TechName>Node Js</TechName>
-                            <TechName>Express Js</TechName>
-                        </ProjectDivTech>
-                        <ProjectIcons>
-                            <ProjectLink href="https://replit.com/@GeniaPiano/To-do-list" target="_blank">
-                                <FaGithub/>
-                            </ProjectLink>
-
-                            <ProjectLink href="https://to-do-list.geniapiano.repl.co/" target="_blank">
-                                <FaEye/>
-                            </ProjectLink>
-                        </ProjectIcons>
-
-                    </ProjectCard>
                 </ProjectsWrapper>
         </ProjectsContainer>
 
